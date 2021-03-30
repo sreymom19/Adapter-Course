@@ -7,8 +7,8 @@
 
     <ImageView
         android:id="@+id/thumb"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="8dp"
@@ -21,7 +21,7 @@
         android:id="@+id/tvTittle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:text="Lady by Prep Sovath"
         android:textColor="#000"
@@ -35,7 +35,7 @@
         android:id="@+id/tvSinger"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="52dp"
         android:text="Prep Sovath"
         android:textColor="#000"

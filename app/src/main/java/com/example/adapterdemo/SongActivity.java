@@ -1,7 +1,10 @@
 package com.example.adapterdemo;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -28,6 +31,15 @@ public class SongActivity extends AppCompatActivity {
 
         getSong();
 
+        songListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(SongActivity.this,
+                        ""+songs.get(position).getSinger(),
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
 
     private void getSong() {
@@ -35,7 +47,7 @@ public class SongActivity extends AppCompatActivity {
             songs.add(
                     new Song(
                             "Lady by Preap Sovanth" + i,
-                            "Preap Sovath",
+                            "Meas Soksophea",
                             R.drawable.preap_sovath,
                             false
                     )
